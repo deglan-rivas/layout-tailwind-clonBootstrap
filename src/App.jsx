@@ -5,6 +5,8 @@ import GetStarted from './sections/GetStarted.jsx'
 import Header from './sections/Header.jsx'
 import JQuery from './sections/JQuery.jsx'
 import Main from './sections/Main.jsx'
+import Personalization from './sections/Personalization.jsx'
+import Themes from './sections/Themes.jsx'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Building/>
       <Components/>
       <JQuery/>
+      <Personalization/>
+      <Themes/>
     </div>
   )
 }
