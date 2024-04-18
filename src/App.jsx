@@ -1,4 +1,5 @@
 import Building from './sections/Building.jsx'
+import Components from './sections/Components.jsx'
 import Customization from './sections/Customization.jsx'
 import GetStarted from './sections/GetStarted.jsx'
 import Header from './sections/Header.jsx'
@@ -12,6 +13,7 @@ function App() {
       <GetStarted/>
       <Customization/>
       <Building/>
+      <Components/>
     </div>
   )
 }
