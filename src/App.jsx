@@ -3,6 +3,7 @@ import Components from './sections/Components.jsx'
 import Customization from './sections/Customization.jsx'
 import GetStarted from './sections/GetStarted.jsx'
 import Header from './sections/Header.jsx'
+import JQuery from './sections/JQuery.jsx'
 import Main from './sections/Main.jsx'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Customization/>
       <Building/>
       <Components/>
+      <JQuery/>
     </div>
   )
 }
