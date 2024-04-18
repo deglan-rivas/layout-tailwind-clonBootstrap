@@ -1,6 +1,6 @@
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { anOldHope } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import Clipboard from './subcomponents/Clipboard';
+import Clipboard from '@/components/Clipboard';
 
 const Customization = () => {
   const code_all = `
