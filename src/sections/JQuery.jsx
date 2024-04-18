@@ -10,6 +10,8 @@ import {
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { stackoverflowDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import Clipboard from '@/components/Clipboard';
+import Plugin from "@/icons/Plugin";
+import ArrowRight from "@/icons/ArrowRight";
 
 const JQuery = () => {
   const code_data = `
@@ -28,9 +30,7 @@ const JQuery = () => {
     <section className="max-w-[1400px] w-full px-6 mx-auto mb-12 pb-12">
       <div className="w-[780px] mb-12">
         <div className="bg-yellow-800/25 p-4 inline-block rounded-2xl mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-plugin w-10 h-10 text-yellow-400" viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M1 8a7 7 0 1 1 2.898 5.673c-.167-.121-.216-.406-.002-.62l1.8-1.8a3.5 3.5 0 0 0 4.572-.328l1.414-1.415a.5.5 0 0 0 0-.707l-.707-.707 1.559-1.563a.5.5 0 1 0-.708-.706l-1.559 1.562-1.414-1.414 1.56-1.562a.5.5 0 1 0-.707-.706l-1.56 1.56-.707-.706a.5.5 0 0 0-.707 0L5.318 5.975a3.5 3.5 0 0 0-.328 4.571l-1.8 1.8c-.58.58-.62 1.6.121 2.137A8 8 0 1 0 0 8a.5.5 0 0 0 1 0"/>
-          </svg>
+          <Plugin className={"w-10 h-10 text-yellow-400"}/>
         </div>
         <h2 className="text-5xl font-bold mb-4">Powerful JavaScript plugins without jQuery</h2>
         <p className="text-xl mb-4">Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with <code className="text-red-400 text-[17.5px]">data</code> attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
@@ -38,9 +38,7 @@ const JQuery = () => {
           <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4">
             Learn more about Bootstrap JavaScript
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-arrow-right inline-block w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-          </svg>
+          <ArrowRight className={"inline-block w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"}/>
         </div>
       </div>
 
@@ -51,7 +49,7 @@ const JQuery = () => {
 
           <div className="text-sm rounded-md mb-4 p-6 overflow-hidden border border-gray-600 flex justify-between bg-transparent">
             <DropdownMenu>
-              <DropdownMenuTrigger className="py-2 px-4 rounded-md text-base !bg-blue-600 hover:bg-blue-700 flex items-center justify-between gap-2">
+              <DropdownMenuTrigger className="py-2 px-4 rounded-md text-base bg-blue-600/70 hover:bg-blue-600 flex items-center justify-between gap-2">
                 Dropdown
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-2 h-2 bi bi-caret-down-fill group-hover:brightness-200 group-hover:text-white cursor-pointer" viewBox="0 0 16 16">
                   <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>

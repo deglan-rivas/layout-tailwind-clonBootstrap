@@ -1,6 +1,7 @@
 import Building from './sections/Building.jsx'
 import Components from './sections/Components.jsx'
 import Customization from './sections/Customization.jsx'
+import Footer from './sections/Footer.jsx'
 import GetStarted from './sections/GetStarted.jsx'
 import Header from './sections/Header.jsx'
 import JQuery from './sections/JQuery.jsx'
@@ -20,6 +21,7 @@ function App() {
       <JQuery/>
       <Personalization/>
       <Themes/>
+      <Footer/>
     </div>
   )
 }

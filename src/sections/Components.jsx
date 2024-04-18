@@ -62,7 +62,7 @@ const Components = () => {
               <div className=' rounded-md overflow-hidden'>
                 <input type="radio" className="peer hidden" id="r-home" name="radio-1" defaultChecked="true"/>
                 <label
-                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-blue-300 inline-block cursor-pointer"
+                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-white inline-block cursor-pointer"
                   htmlFor="r-home"
                 >
                   Home
@@ -72,7 +72,7 @@ const Components = () => {
               <div>
                 <input type="radio" className="peer hidden" id="r-profile" name="radio-1"/>
                 <label
-                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-blue-300 inline-block cursor-pointer"
+                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-white inline-block cursor-pointer"
                   htmlFor="r-profile"
                 >
                   Profile
@@ -82,7 +82,7 @@ const Components = () => {
               <div>
                 <input type="radio" className="peer hidden" id="r-contact" name="radio-1"/>
                 <label
-                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-blue-300 inline-block cursor-pointer"
+                  className="text-blue-400 px-4 py-2 rounded-md hover:text-blue-300 peer-checked:bg-blue-600 peer-checked:text-white inline-block cursor-pointer"
                   htmlFor="r-contact"
                   >
                   Contact
