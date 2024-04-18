@@ -1,5 +1,6 @@
 import BookHalf from "@/icons/BookHalf"
 import Clipboard from "../components/Clipboard"
+import ArrowRight from "@/icons/ArrowRight"
 
 const Main = () => {
   const code_build = `npm i bootstrap@5.3.3`
@@ -9,9 +10,7 @@ const Main = () => {
       <a href="#" className="bg-yellow-300 text-black rounded-full py-1 px-4 text-sm">
         <span className="font-semibold">New! </span>
         Never-Ending Support for Bootstrap
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-arrow-right w-4 h-4 pl-1 inline-block" viewBox="0 0 16 16">
-          <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-        </svg>
+        <ArrowRight className={"w-4 h-4 pl-1 inline-block"} />
       </a>
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="bootstrap-logo.png" className="h-40 py-4"/>
       <h1 className="font-bold text-6xl w-4/5 text-center">Build fast, responsive sites with Boostrap</h1>
