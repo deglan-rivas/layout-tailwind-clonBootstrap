@@ -6,7 +6,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-const Clipboard = ({content}) => {
+import { cn } from "@/lib/utils"
+
+const Clipboard = ({content, className}) => {
   const [copied, setCopied] = useState(false);
 
   return (
@@ -14,7 +16,7 @@ const Clipboard = ({content}) => {
       <Tooltip className="group">
         <TooltipTrigger>
           <button 
-            className="bg-transparent px-2 py-2 rounded-md group hover:bg-transparent/20"
+            className={cn("bg-transparent px-2 py-2 rounded-md group hover:bg-transparent/20", className)}
             onClick={() => {
               setCopied(true)
               navigator.clipboard.writeText(content)

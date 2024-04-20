@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <>
-    <header className="bg-violet-800/90 sticky top-0">
+    <header className="bg-violet-700/90 sticky top-0">
       <div className="container mx-auto justify-between items-center text-gray-200 py-3 font-medium hidden lg:flex">
         <nav className="flex items-center space-x-3">
           <Bootstrap className={"d-block my-1 w-10 h-8 hover:scale-110 hover:-rotate-12 transition-transform cursor-pointer"}/>
@@ -138,7 +138,7 @@ const Header = () => {
       
     </header>
 
-    <header className="bg-violet-800/90 sticky top-0">
+    <header className="bg-violet-700/90 sticky top-0">
       <div className="py-6 flex justify-end items-center px-6 gap-4
         lg:hidden">
         <Bootstrap className={"d-block my-0 w-10 h-10 hover:scale-110 hover:-rotate-12 transition-transform cursor-pointer absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"}/>
