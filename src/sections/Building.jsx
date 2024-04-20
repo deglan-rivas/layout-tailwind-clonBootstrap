@@ -32,14 +32,18 @@ const Building = () => {
   `
 
   return (
-    <section className="max-w-[1400px] w-full px-6 mx-auto mb-12 pb-12">
-      <div className="w-8/12 mb-12">
+    <section className="max-w-[1320px] w-full px-6 mx-auto mb-12 pb-12">
+      <div className="w-full mb-12
+      lg:w-7/12">
         <div className="bg-red-800/15 p-4 inline-block rounded-2xl mb-4">
           <Braces className={"text-red-400 w-10 h-10"}/>
         </div>
-        <h2 className="text-5xl font-bold mb-4">Build and extend in real-time with CSS variables</h2>
-        <p className="text-lg mb-4">Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a <code className="text-red-400">:root</code> level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.</p>
-        <div className="group font-semibold text-blue-400  text-lg inline-flex items-center">
+        <h2 className="text-3xl font-bold mb-4
+        md:text-4xl
+        lg:text-5xl">Build and extend in real-time with CSS variables</h2>
+        <p className="text-base mb-4
+        md:text-xl">Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a <code className="text-red-400">:root</code> level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.</p>
+        <div className="group font-semibold text-blue-400 inline-flex items-center md:text-xl">
           <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4">
             Learn more about CSS variables
           </div>
@@ -48,7 +52,8 @@ const Building = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-12">
-        <div className="mb-4">
+        <div className="mb-4 col-span-2
+        lg:col-span-1">
           <h3 className="text-3xl mb-2 font-semibold">Using CSS variables</h3>
           <p className="mb-4">Use any of our <a href="#" className="text-blue-400 underline hover:brightness-125">global :root variables</a> to write new styles. CSS variables use the <code className="text-red-400 text-sm">var(--bs-variableName)</code> syntax and can be inherited by children elements.</p>
           
@@ -61,7 +66,8 @@ const Building = () => {
             </div>
           </div>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 col-span-2
+        lg:col-span-1">
           <h3 className="text-3xl mb-2 font-semibold">Customizing via CSS variables</h3>
           <p className="mb-4">Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
           
