@@ -27,14 +27,15 @@ const JQuery = () => {
   </div>
   `
   return (
-    <section className="max-w-[1400px] w-full px-6 mx-auto mb-12 pb-12">
-      <div className="w-[780px] mb-12">
+    <section className="max-w-[1320px] w-full px-6 mx-auto mb-12 pb-12">
+      <div className="w-full mb-12
+      lg:w-7/12">
         <div className="bg-yellow-800/25 p-4 inline-block rounded-2xl mb-4">
           <Plugin className={"w-10 h-10 text-yellow-400"}/>
         </div>
-        <h2 className="text-5xl font-bold mb-4">Powerful JavaScript plugins without jQuery</h2>
-        <p className="text-xl mb-4">Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with <code className="text-red-400 text-[17.5px]">data</code> attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
-        <div className="group font-semibold text-xl text-blue-400 inline-flex items-center">
+        <h2 className="text-3xl font-bold mb-4 md:text-4xl lg:text-5xl">Powerful JavaScript plugins without jQuery</h2>
+        <p className="text-base mb-4 md:text-xl">Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with <code className="text-red-400 text-[17.5px]">data</code> attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
+        <div className="group font-semibold text-blue-400 inline-flex items-center md:text-xl">
           <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4">
             Learn more about Bootstrap JavaScript
           </div>
@@ -43,7 +44,7 @@ const JQuery = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-12">
-        <div className="mb-4">
+        <div className="mb-4 col-span-2 lg:col-span-1">
           <h3 className="text-3xl mb-2 font-semibold">Data attribute API</h3>
           <p className="mb-4">Why write more JavaScript when you can write HTML? Nearly all of Bootstrap's JavaScript plugins feature a first-class data API, allowing you to use JavaScript just by adding <code className="text-red-400 text-sm">data</code> attributes.</p>
 
@@ -75,7 +76,7 @@ const JQuery = () => {
             Learn more about <a href="#" className="text-blue-400 underline hover:brightness-125">our JavaScript as modules</a> and <a href="#" className="text-blue-400 underline hover:brightness-125">using the programmatic API</a>.
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 col-span-2 col-span-1">
           <h3 className="text-3xl mb-2 font-semibold">Comprehensive set of plugins</h3>
             <p className="mb-4">Bootstrap features a dozen plugins that you can drop into any project. Drop them in all at once, or choose just the ones you need.</p>
             <hr className="my-4 border-gray-500"/>
