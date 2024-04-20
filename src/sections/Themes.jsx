@@ -14,7 +14,7 @@ const Themes = () => {
         <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4 text-base md:text-xl">
           Browse Bootstrap Themes
         </div>
-        <ArrowRight className={"inline-block w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"}/>
+        <ArrowRight className={"inline-block w-4 h-4 lg:w-5 lg:h-5 ml-1 group-hover:translate-x-1 transition-transform"} />
       </div>
     </div>
 

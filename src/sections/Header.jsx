@@ -141,7 +141,9 @@ const Header = () => {
     <header className="bg-violet-700/90 sticky top-0">
       <div className="py-6 flex justify-end items-center px-6 gap-4
         lg:hidden">
-        <Bootstrap className={"d-block my-0 w-10 h-10 hover:scale-110 hover:-rotate-12 transition-transform cursor-pointer absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"}/>
+        <a href="#">
+          <Bootstrap className={"d-block my-0 w-10 h-10 hover:scale-110 hover:-rotate-12 transition-transform cursor-pointer absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"}/>
+        </a>
         <Search className={"w-5 h-5 text-white/50 hover:text-white cursor-pointer"}/>
         <ThreeDots className={"w-5 h-5 text-white/50 hover:text-white cursor-pointer"} />
       </div>

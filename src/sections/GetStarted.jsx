@@ -33,15 +33,15 @@ const GetStarted = () => {
           Get Started any way you want
         </h2>
         <p className="
-        md:text-lg
-        lg:text-xl">
+        md:text-xl">
           Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.
         </p>
-        <div className="group font-semibold text-blue-400  text-lg inline-flex items-center">
-          <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4">
+        <div className="group font-semibold text-blue-400 inline-flex items-center">
+          <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4
+          md:text-xl">
             Read installation docs
           </div>
-          <ArrowRight className={"inline-block w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"} />
+          <ArrowRight className={"inline-block w-4 h-4 lg:w-5 lg:h-5 ml-1 group-hover:translate-x-1 transition-transform"} />
         </div>
       </div>
       <div className="grid grid-cols-2 gap-x-12
