@@ -20,8 +20,9 @@ const GetStarted = () => {
 
   return (
     <div className="max-w-[1320px] w-full px-6 mx-auto mb-24">
-      <div className="text-start flex flex-col items-start gap-4 mb-16 w-full
+      <div className="text-start flex flex-col items-start gap-4 mb-8 w-full
       md:items-center md:text-center
+      md:mb-16
       lg:w-7/12 lg:mx-auto">
         <div className="bg-violet-600/10 p-4 flex justify-center items-center rounded-2xl">
           <Code className={"text-violet-500 opacity-100 w-10 h-10"}/>
@@ -43,9 +44,11 @@ const GetStarted = () => {
           <ArrowRight className={"inline-block w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform"} />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-12 divide-x">
-        <div className="py-6">
-          <ShippingBox className={"w-8 h-8 mb-2"}/>
+      <div className="grid grid-cols-2 gap-x-12
+      lg:divide-x">
+        <div className="py-6 col-span-2
+        lg:col-span-1">
+          <ShippingBox className={"w-6 h-6 mb-2 md:w-7 md:h-7 lg:w-8 lg:h-8"}/>
 
           <h3 className="font-bold text-2xl mb-2">Install via package manager</h3>
           <p className="mb-4">
@@ -55,7 +58,8 @@ const GetStarted = () => {
             { } to quickly jumpstart Bootstrap projects.
           </p>
           
-          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-4 rounded-md mb-4">
+          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-screen -ml-6
+          md:w-full md:ml-0">
             <div>
               <span className="select-none text-gray-500">$</span>
               <code  className="pl-2 text-sm">{code_install_1}</code>
@@ -63,7 +67,8 @@ const GetStarted = () => {
             <Clipboard content={code_install_1}/>
           </div>
 
-          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-4 rounded-md mb-4">
+          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-screen -ml-6
+          md:w-full md:ml-0">
             <div>
               <span className="select-none text-gray-500">$</span>
               <code  className="pl-2 text-sm">{code_install_2}</code>
@@ -80,7 +85,8 @@ const GetStarted = () => {
         </div>
 
 
-        <div className="pl-12 py-6">
+        <div className="pl-0 py-6 col-span-2
+        lg:col-span-1 lg:pl-12">
           <Globe className={"w-8 h-8 mb-2"} />
 
           <h3 className="font-bold text-2xl mb-2">Include via CDN</h3>
@@ -88,7 +94,8 @@ const GetStarted = () => {
             When you only need to include Bootstrap's compiled CSS or JS, you can use <a href='#' className="text-blue-400 hover:brightness-150 underline">jsDelivr</a>. See it in action with our simple <a href='#' className="text-blue-400 hover:brightness-150 underline">quick start</a>, or <a href='#' className="text-blue-400 hover:brightness-150 underline">browse the examples</a> to jumpstart your next project. You can also choose to include Popper and our JS <a href='#' className="text-blue-400 hover:brightness-150 underline">separately</a>.
           </p>
 
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex">
+          <div className="text-sm rounded-md overflow-hidden border border-gray-600 flex mb-4 w-screen -ml-6
+          md:w-full md:ml-0">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_include_1}
             </SyntaxHighlighter>
@@ -97,7 +104,8 @@ const GetStarted = () => {
             </div>
           </div>
 
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex">
+          <div className="text-sm rounded-md overflow-hidden border border-gray-600 flex mb-4 w-screen -ml-6
+          md:w-full md:ml-0">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_include_2}
             </SyntaxHighlighter>
