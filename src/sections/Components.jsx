@@ -58,7 +58,7 @@ const Components = () => {
       <div className="grid grid-cols-2 gap-12">
         <div className="mb-4 col-span-2
         lg:col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Quickly customize components</h3>
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Quickly customize components</h3>
           <p className="mb-4">Apply any of our included utility classes to our components to customize their appearance, like the navigation example below. There are hundreds of classes available—from <a href="#" className="text-blue-400 underline hover:brightness-125">positioning</a> and <a href="#" className="text-blue-400 underline hover:brightness-125">sizing</a> to <a href="#" className="text-blue-400 underline hover:brightness-125">colors</a> and <a href="#" className="text-blue-400 underline hover:brightness-125">effects</a>. Mix them with CSS variable overrides for even more control.</p>
 
           <div className="text-base rounded-md mb-6 p-6 border border-gray-600 bg-transparent">
@@ -126,7 +126,8 @@ const Components = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21]">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6
+          md:w-full md:ml-0">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_quickly}
             </SyntaxHighlighter>
@@ -144,10 +145,10 @@ const Components = () => {
         </div>
         <div className="mb-4 col-span-2
         lg:col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Create and extend utilities</h3>
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Create and extend utilities</h3>
           <p className="mb-4">Use Bootstrap's utility API to modify any of our included utilities or create your own custom utilities for any project. Import Bootstrap first, then use Sass map functions to modify, add, or remove utilities.</p>
 
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21]">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
             <SyntaxHighlighter language='scss' style={anOldHope}>
               {code_create}
             </SyntaxHighlighter>
