@@ -19,13 +19,23 @@ const GetStarted = () => {
   `
 
   return (
-    <div className="max-w-[1400px] w-full px-6 mx-auto mb-24">
-      <div className="text-center flex flex-col justify-center items-center gap-4 mb-16">
+    <div className="max-w-[1320px] w-full px-6 mx-auto mb-24">
+      <div className="text-start flex flex-col items-start gap-4 mb-16 w-full
+      md:items-center md:text-center
+      lg:w-7/12 lg:mx-auto">
         <div className="bg-violet-600/10 p-4 flex justify-center items-center rounded-2xl">
           <Code className={"text-violet-500 opacity-100 w-10 h-10"}/>
         </div>
-        <h2 className="text-5xl font-bold">Get Started any way you want</h2>
-        <p className="max-w-lg text-lg">Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.</p>
+        <h2 className="text-3xl font-bold
+        md:text-4xl
+        lg:text-5xl">
+          Get Started any way you want
+        </h2>
+        <p className="
+        md:text-lg
+        lg:text-xl">
+          Jump right into building with Bootstrap—use the CDN, install it via package manager, or download the source code.
+        </p>
         <div className="group font-semibold text-blue-400  text-lg inline-flex items-center">
           <div className="group-hover:brightness-125 group-hover:cursor-pointer underline underline-offset-4">
             Read installation docs
