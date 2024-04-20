@@ -54,10 +54,10 @@ const Building = () => {
       <div className="grid grid-cols-2 gap-12">
         <div className="mb-4 col-span-2
         lg:col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Using CSS variables</h3>
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Using CSS variables</h3>
           <p className="mb-4">Use any of our <a href="#" className="text-blue-400 underline hover:brightness-125">global :root variables</a> to write new styles. CSS variables use the <code className="text-red-400 text-sm">var(--bs-variableName)</code> syntax and can be inherited by children elements.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21]">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_using}
             </SyntaxHighlighter>
@@ -68,10 +68,10 @@ const Building = () => {
         </div>
         <div className="mb-4 col-span-2
         lg:col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Customizing via CSS variables</h3>
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Customizing via CSS variables</h3>
           <p className="mb-4">Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21]">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_customizing}
             </SyntaxHighlighter>
