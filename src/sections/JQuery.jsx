@@ -45,7 +45,7 @@ const JQuery = () => {
 
       <div className="grid grid-cols-2 gap-12">
         <div className="mb-4 col-span-2 lg:col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Data attribute API</h3>
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Data attribute API</h3>
           <p className="mb-4">Why write more JavaScript when you can write HTML? Nearly all of Bootstrap's JavaScript plugins feature a first-class data API, allowing you to use JavaScript just by adding <code className="text-red-400 text-sm">data</code> attributes.</p>
 
           <div className="text-sm rounded-md mb-4 p-6 overflow-hidden border border-gray-600 flex justify-between bg-transparent">
@@ -63,7 +63,7 @@ const JQuery = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21]">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_data}
             </SyntaxHighlighter>
@@ -76,12 +76,12 @@ const JQuery = () => {
             Learn more about <a href="#" className="text-blue-400 underline hover:brightness-125">our JavaScript as modules</a> and <a href="#" className="text-blue-400 underline hover:brightness-125">using the programmatic API</a>.
           </p>
         </div>
-        <div className="mb-4 col-span-2 col-span-1">
-          <h3 className="text-3xl mb-2 font-semibold">Comprehensive set of plugins</h3>
+        <div className="mb-4 col-span-2 lg:col-span-1">
+          <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Comprehensive set of plugins</h3>
             <p className="mb-4">Bootstrap features a dozen plugins that you can drop into any project. Drop them in all at once, or choose just the ones you need.</p>
             <hr className="my-4 border-gray-500"/>
             <div href="#" className="grid grid-cols-2 gap-x-10 gap-y-6">
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Alert
                 </h4>
@@ -89,7 +89,7 @@ const JQuery = () => {
                   Show and hide alert messages to your users.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Button
                 </h4>
@@ -98,7 +98,7 @@ const JQuery = () => {
                 </p>
               </a>
 
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Carousel
                 </h4>
@@ -106,7 +106,7 @@ const JQuery = () => {
                   Add slideshows to any page, including support for crossfade.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Collapse
                 </h4>
@@ -115,7 +115,7 @@ const JQuery = () => {
                 </p>
               </a>
 
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Dropdown
                 </h4>
@@ -123,7 +123,7 @@ const JQuery = () => {
                   Create menus of links, actions, forms, and more.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Modal
                 </h4>
@@ -132,7 +132,7 @@ const JQuery = () => {
                 </p>
               </a>
 
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Offcanvas
                 </h4>
@@ -140,7 +140,7 @@ const JQuery = () => {
                   Build and toggle hidden sidebars into any page.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Popover
                 </h4>
@@ -149,7 +149,7 @@ const JQuery = () => {
                 </p>
               </a>
               
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Scrollspy
                 </h4>
@@ -157,7 +157,7 @@ const JQuery = () => {
                   Automatically update active nav links based on page scroll.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Tab
                 </h4>
@@ -166,7 +166,7 @@ const JQuery = () => {
                 </p>
               </a>
 
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Toast
                 </h4>
@@ -174,7 +174,7 @@ const JQuery = () => {
                   Show and hide notifications to your visitors.
                 </p>
               </a>
-              <a href="#" className="block">
+              <a href="#" className="block col-span-2 md:col-span-1">
                 <h4 className="text-xl font-semibold">
                   Tooltip
                 </h4>
