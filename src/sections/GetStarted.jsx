@@ -67,8 +67,8 @@ const GetStarted = () => {
             <Clipboard content={code_install_1}/>
           </div>
 
-          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="flex justify-between items-center border-y bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <div>
               <span className="select-none text-gray-500">$</span>
               <code  className="pl-2 text-sm">{code_install_2}</code>
@@ -94,8 +94,8 @@ const GetStarted = () => {
             When you only need to include Bootstrap's compiled CSS or JS, you can use <a href='#' className="text-blue-400 hover:brightness-150 underline">jsDelivr</a>. See it in action with our simple <a href='#' className="text-blue-400 hover:brightness-150 underline">quick start</a>, or <a href='#' className="text-blue-400 hover:brightness-150 underline">browse the examples</a> to jumpstart your next project. You can also choose to include Popper and our JS <a href='#' className="text-blue-400 hover:brightness-150 underline">separately</a>.
           </p>
 
-          <div className="text-sm rounded-md overflow-hidden border border-gray-600 flex mb-4 w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="text-sm rounded-md border-y border-gray-600 flex mb-4 w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_include_1}
             </SyntaxHighlighter>
@@ -104,8 +104,8 @@ const GetStarted = () => {
             </div>
           </div>
 
-          <div className="text-sm rounded-md overflow-hidden border border-gray-600 flex mb-4 w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="text-sm rounded-md border-y border-gray-600 flex mb-4 w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_include_2}
             </SyntaxHighlighter>

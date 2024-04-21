@@ -69,8 +69,8 @@ const Customization = () => {
           lg:text-3xl">Include all of Bootstrap's Sass</h3>
           <p className="mb-4">Import one stylesheet and you're off to the races with every feature of our CSS.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 bg-[#1c1c21] flex justify-between w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 bg-[#1c1c21] flex justify-between w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_all}
             </SyntaxHighlighter>
@@ -87,8 +87,8 @@ const Customization = () => {
           lg:text-3xl">Include what you need</h3>
           <p className="mb-4">The easiest way to customize Bootstrap—include only the CSS you need.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 bg-[#1c1c21] flex justify-between w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 bg-[#1c1c21] flex justify-between w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_needs}
             </SyntaxHighlighter>

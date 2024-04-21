@@ -63,7 +63,7 @@ const JQuery = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 overflow-hidden border-y border-gray-600 flex justify-between bg-[#1c1c21] w-[calc(100vw-15px)] -ml-6 md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_data}
             </SyntaxHighlighter>

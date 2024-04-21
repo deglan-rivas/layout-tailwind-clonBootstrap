@@ -126,8 +126,8 @@ const Components = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 flex justify-between bg-[#1c1c21] w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='htmlbars' style={stackoverflowDark}>
               {code_quickly}
             </SyntaxHighlighter>
@@ -148,7 +148,7 @@ const Components = () => {
           <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Create and extend utilities</h3>
           <p className="mb-4">Use Bootstrap's utility API to modify any of our included utilities or create your own custom utilities for any project. Import Bootstrap first, then use Sass map functions to modify, add, or remove utilities.</p>
 
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 flex justify-between bg-[#1c1c21] w-[calc(100vw-15px)] -ml-6 md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='scss' style={anOldHope}>
               {code_create}
             </SyntaxHighlighter>

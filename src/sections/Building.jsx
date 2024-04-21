@@ -57,7 +57,7 @@ const Building = () => {
           <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Using CSS variables</h3>
           <p className="mb-4">Use any of our <a href="#" className="text-blue-400 underline hover:brightness-125">global :root variables</a> to write new styles. CSS variables use the <code className="text-red-400 text-sm">var(--bs-variableName)</code> syntax and can be inherited by children elements.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 flex justify-between bg-[#1c1c21] w-[calc(100vw-15px)] -ml-6 md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_using}
             </SyntaxHighlighter>
@@ -71,7 +71,7 @@ const Building = () => {
           <h3 className="text-xl mb-2 font-semibold md:text-2xl lg:text-3xl">Customizing via CSS variables</h3>
           <p className="mb-4">Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</p>
           
-          <div className="text-sm rounded-md mb-4 overflow-hidden border border-gray-600 flex justify-between bg-[#1c1c21] w-screen -ml-6 md:w-full md:ml-0">
+          <div className="text-sm rounded-md mb-4 border-y border-gray-600 flex justify-between bg-[#1c1c21] w-[calc(100vw-15px)] -ml-6 md:w-full md:ml-0 md:border">
             <SyntaxHighlighter language='' style={anOldHope}>
               {code_customizing}
             </SyntaxHighlighter>
