@@ -11,6 +11,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+import { Button } from "@/components/ui/button"
+
 import Bootstrap from "@/icons/Bootstrap"
 import Search from "@/icons/Search"
 import Ctrl from "@/icons/Ctrl"
@@ -22,6 +30,7 @@ import MoonStars from "@/icons/MoonStars"
 import Sun from "@/icons/Sun"
 import CircleHalf from "@/icons/CircleHalf"
 import ThreeDots from "@/icons/ThreeDots"
+import Close from "@/icons/Close"
 
 export function DropdownMenuRadioGroupDemo() {
 
@@ -145,7 +154,74 @@ const Header = () => {
           <Bootstrap className={"d-block my-0 w-10 h-10 hover:scale-110 hover:-rotate-12 transition-transform cursor-pointer absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"}/>
         </a>
         <Search className={"w-5 h-5 text-white/50 hover:text-white cursor-pointer"}/>
-        <ThreeDots className={"w-5 h-5 text-white/50 hover:text-white cursor-pointer"} />
+        
+        <Drawer direction="right">
+          <DrawerTrigger>
+            <ThreeDots className={"w-5 h-5 text-white/50 hover:text-white"} />
+          </DrawerTrigger>
+          <DrawerContent className={"inset-y-0 left-auto w-full max-w-[420px] mt-0 bg-violet-700 border-0 px-6 after:content-none rounded-none divide-y border-gray-200"}>
+            <div className="flex justify-between items-center py-4 border-gray-200">
+              <h2 className="text-white font-medium text-xl">
+                Bootstrap
+              </h2>
+              <DrawerClose>
+                <Button className={"bg-transparent text-gray-400 hover:bg-transparent hover:text-gray-300 -mr-4"}>
+                  <Close className={"w-6 h-6"}/>
+                </Button>
+              </DrawerClose>
+            </div>
+            
+            <div className="border-gray-400/30 py-6 text-gray-300 grid grid-cols-2 gap-y-4">
+              <a href="#" className="hover:text-white">
+                Docs
+              </a>
+
+              <a href="#" className="hover:text-white">
+                Examples
+              </a>
+
+              <a href="#" className="hover:text-white">
+                Icons
+              </a>
+
+              <a href="#" className="hover:text-white">
+                Themes
+              </a>
+
+              <a href="#" className="hover:text-white">
+                Blog
+              </a>
+            </div>
+
+            <div className="border-gray-400/30 py-6 text-gray-300 grid grid-cols-2 gap-y-4">
+              <a href="#" className="flex gap-x-2 items-center text-sm hover:text-gray-100">
+                <Github className={"w-4 h-4"}/>
+                Github
+              </a>
+
+              <a href="#" className="flex gap-x-2 items-center text-sm hover:text-gray-100">
+                <Twitter className={"w-4 h-4"}/>
+                Twitter
+              </a>
+
+              <a href="#" className="flex gap-x-2 items-center text-sm hover:text-gray-100">
+                <OpenCollective className={"w-4 h-4"}/>
+                OpenCollective
+              </a>
+              <div className="flex space-x-3 items-center pr-3">
+          </div>
+            </div>
+
+            <div className="border-gray-400/30 py-6 text-gray-300">
+              Bootstrap v5.3
+            </div>
+
+            <div className="border-gray-400/30 py-6 text-gray-300">
+              Toggle theme
+            </div>
+          </DrawerContent>
+        </Drawer>
+
       </div>
     </header>
     </>

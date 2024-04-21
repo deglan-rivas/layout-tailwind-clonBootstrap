@@ -58,8 +58,8 @@ const GetStarted = () => {
             { } to quickly jumpstart Bootstrap projects.
           </p>
           
-          <div className="flex justify-between items-center border bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-screen -ml-6
-          md:w-full md:ml-0">
+          <div className="flex justify-between items-center border-y bg-black/30 border-gray-600 text-gray-300 px-4 py-6 rounded-md mb-4 w-[calc(100vw-15px)] -ml-6
+          md:w-full md:ml-0 md:border">
             <div>
               <span className="select-none text-gray-500">$</span>
               <code  className="pl-2 text-sm">{code_install_1}</code>
