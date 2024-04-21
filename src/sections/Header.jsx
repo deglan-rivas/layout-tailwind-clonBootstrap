@@ -212,13 +212,70 @@ const Header = () => {
           </div>
             </div>
 
-            <div className="border-gray-400/30 py-6 text-gray-300">
-              Bootstrap v5.3
-            </div>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <div className="pt-6 pb-1 mb-5 border-gray-400/30 flex items-center space-x-2 group">
+                  <p className="text-gray-300 group-hover:brightness-200 group-hover:text-white group-data-[state=open]:text-white cursor-pointer">
+                    Bootstrap v5.3
+                  </p>
+                  <ChevronDown className={"w-2 h-2 text-gray-300 group-hover:brightness-200 group-hover:text-white group-data-[state=open]:text-white cursor-pointer"}/>
+                </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-gray-800 border-gray-500">
+                <DropdownMenuLabel className="text-gray-400 px-4 py-[6px]">v5 releases</DropdownMenuLabel>
+                <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+                  <DropdownMenuRadioItem value="v5.3.x" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">Latest (5.3.x)</DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="v5.2.3" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v5.2.3</DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="v5.1.3" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v5.1.3</DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="v5.0.2" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v5.0.2</DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+                <DropdownMenuSeparator className="bg-gray-400 my-2"/>
+                <DropdownMenuLabel className="text-gray-400 px-4 py-[6px]">Previous releases</DropdownMenuLabel>
+                <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+                  <DropdownMenuRadioItem value="v4.6.x" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v4.6.x</DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="v3.4.1" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v3.4.1</DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="v2.3.2" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">v2.3.2</DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+                <DropdownMenuSeparator className="bg-gray-400 my-2"/>
+                <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+                  {/* agregar un disabled al All versions para hacer pruebas con el Header.css, pero gana el tailwindcss, revisar notion */}
+                  {/* <DropdownMenuRadioItem value="vx.x.x" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[disabled]:bg-red-400" data-[state=unchecked]:text-green-400 disabled>All versions</DropdownMenuRadioItem> */}
+                  <DropdownMenuRadioItem value="vx.x.x" className="text-white px-4 py-1 focus:bg-violet-600/20 focus:text-white data-[state=checked]:bg-violet-600 data-[state=checked]:font-semibold">All versions</DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
-            <div className="border-gray-400/30 py-6 text-gray-300">
+            {/* <div className="border-gray-400/30 py-6 text-gray-300">
               Toggle theme
-            </div>
+            </div> */}
+
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <div className="pt-6 pb-1 mb-5 border-gray-400/30 flex items-center space-x-2 group">
+                  <MoonStars className={"w-4 h-4 text-gray-300 group-hover:brightness-200 group-hover:text-white group-data-[state=open]:text-white cursor-pointer"}/>
+                  <p className="text-gray-300 group-hover:brightness-200 group-hover:text-white group-data-[state=open]:text-white cursor-pointer">
+                    Toggle theme
+                  </p>
+                  <ChevronDown className={"w-2 h-2 text-gray-300 group-hover:brightness-200 group-hover:text-white group-data-[state=open]:text-white cursor-pointer"}/>
+              </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-gray-800 border-gray-500">
+                <DropdownMenuRadioGroup value={lightMode} onValueChange={setLightMode}>
+                  <DropdownMenuRadioItem value="light" className="text-gray-400 px-4 py-1 focus:bg-violet-600/20 focus:text-gray-300 data-[state=checked]:bg-violet-600 data-[state=checked]:text-white data-[state=checked]:font-semibold gap-1">
+                    <Sun/>
+                    <p>Light</p>
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="dark" className="text-gray-400 px-4 py-1 focus:bg-violet-600/20 focus:text-gray-300 data-[state=checked]:bg-violet-600 data-[state=checked]:text-white data-[state=checked]:font-semibold gap-1">
+                    <MoonStars/> 
+                    <p>Dark</p>
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="auto" className="text-gray-400 px-4 py-1 focus:bg-violet-600/20 focus:text-gray-300 data-[state=checked]:bg-violet-600 data-[state=checked]:text-white data-[state=checked]:font-semibold gap-1">
+                    <CircleHalf/>
+                    <p>Auto</p>
+                  </DropdownMenuRadioItem>
+                </DropdownMenuRadioGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </DrawerContent>
         </Drawer>
 
